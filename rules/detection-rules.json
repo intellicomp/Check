@@ -1,6 +1,6 @@
 {
   "version": "2.2.0",
-  "lastUpdated": "2026-04-20T00:00:00Z",
+  "lastUpdated": "2026-04-22T00:00:00Z",
   "description": "Phishing detection logic for identifying phishing attempts targeting Microsoft 365 login pages",
   "trusted_login_patterns": [
     "^https:\\/\\/login\\.microsoftonline\\.(com|us)$",
