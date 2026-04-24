@@ -1,6 +1,6 @@
 {
-  "version": "2.2.1",
-  "lastUpdated": "2026-04-24T18:00:00Z",
+  "version": "2.2.2",
+  "lastUpdated": "2026-04-24T20:16:00Z",
   "description": "Phishing detection logic for identifying phishing attempts targeting Microsoft 365 login pages",
   "trusted_login_patterns": [
     "^https:\\/\\/login\\.microsoftonline\\.(com|us)$",
@@ -1845,6 +1845,7 @@
   },
   "domain_squatting": {
     "description": "Domain squatting detection configuration to protect against typosquatting, homoglyphs, and combosquatting attacks",
+    "enabled": false,
     "action": "warn",
     "deviation_threshold": 1,
     "algorithms": {
