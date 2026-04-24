@@ -1845,8 +1845,8 @@
   },
   "domain_squatting": {
     "description": "Domain squatting detection configuration to protect against typosquatting, homoglyphs, and combosquatting attacks",
-    "action": "block",
-    "deviation_threshold": 2,
+    "action": "warn",
+    "deviation_threshold": 1,
     "algorithms": {
       "levenshtein": true,
       "homoglyph": true,
