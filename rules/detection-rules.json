@@ -63,7 +63,9 @@
       "^https:\\/\\/[^/]*\\.github\\.io(/.*)?$",
       "^https://[^/]*\\.huntress.io(/.*)?$",
       "^https://ltshare\\.intelli-comp\\.com(/.*)?$",
-      "^https://[^/]*\\.intellicomp.net(/.*)?$"
+      "^https://[^/]*\\.intellicomp.net(/.*)?$",
+      "^https:\\/\\/id\\.trimble\\.com(/.*)?$",
+      "^https:\\/\\/auth\\.services\\.adobe\\.com(/.*)?$"
     ],
     "context_indicators": {
       "description": "Additional context that indicates legitimate discussion vs phishing",
