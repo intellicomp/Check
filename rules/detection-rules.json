@@ -156,15 +156,37 @@
             {
               "type": "any_of",
               "operations": [
-                { "type": "substring_present", "values": ["No account? Create one"] },
-                { "type": "substring_present", "values": ["Sign-in options"] }
+                {
+                  "type": "substring_present",
+                  "values": [
+                    "No account? Create one"
+                  ]
+                },
+                {
+                  "type": "substring_present",
+                  "values": [
+                    "Sign-in options"
+                  ]
+                }
               ]
             },
             {
               "type": "any_of",
               "operations": [
-                { "type": "substring_present", "values": ["Can't access your account", "Can’t access your account", "Cant access your account"] },
-                { "type": "substring_present", "values": ["Terms of use"] }
+                {
+                  "type": "substring_present",
+                  "values": [
+                    "Can't access your account",
+                    "Can’t access your account",
+                    "Cant access your account"
+                  ]
+                },
+                {
+                  "type": "substring_present",
+                  "values": [
+                    "Terms of use"
+                  ]
+                }
               ]
             }
           ]
@@ -191,10 +213,20 @@
         "code_logic": {
           "type": "all_of",
           "operations": [
-            { "type": "substring_present", "values": ["<canvas"] },
             {
               "type": "substring_present",
-              "values": ["socket.io", "new WebSocket(", "WebSocket('", "WebSocket(\""]
+              "values": [
+                "<canvas"
+              ]
+            },
+            {
+              "type": "substring_present",
+              "values": [
+                "socket.io",
+                "new WebSocket(",
+                "WebSocket('",
+                "WebSocket(\""
+              ]
             },
             {
               "type": "any_of",
@@ -484,7 +516,8 @@
     {
       "id": "aitm_microsoft_markers_off_origin",
       "type": "aitm_origin_validation",
-      "description": "Block when Microsoft 365 login markers - structural (idPartnerPL, loginfmt, etc.) AND/OR durable visible-UX markers (img alt=\"Microsoft\", 'Sign-in options', 'No account? Create one', 'Can't access your account', 'Sign in to your account' title) - appear on a non-Microsoft origin with any credential input. Catches both AitM reverse-proxy kits and CSS-clone kits that strip canonical MS DOM hooks (which is what Quantum Route Redirect / Tycoon-2FA-style kits do).",      "condition": {
+      "description": "Block when Microsoft 365 login markers - structural (idPartnerPL, loginfmt, etc.) AND/OR durable visible-UX markers (img alt=\"Microsoft\", 'Sign-in options', 'No account? Create one', 'Can't access your account', 'Sign in to your account' title) - appear on a non-Microsoft origin with any credential input. Catches both AitM reverse-proxy kits and CSS-clone kits that strip canonical MS DOM hooks (which is what Quantum Route Redirect / Tycoon-2FA-style kits do).",
+      "condition": {
         "microsoft_source_markers": [
           "idPartnerPL",
           "loginfmt",
@@ -1851,10 +1884,20 @@
       "code_logic": {
         "type": "all_of",
         "operations": [
-          { "type": "substring_present", "values": ["<canvas"] },
           {
             "type": "substring_present",
-            "values": ["socket.io", "new WebSocket(", "WebSocket('", "WebSocket(\""]
+            "values": [
+              "<canvas"
+            ]
+          },
+          {
+            "type": "substring_present",
+            "values": [
+              "socket.io",
+              "new WebSocket(",
+              "WebSocket('",
+              "WebSocket(\""
+            ]
           },
           {
             "type": "any_of",
@@ -1899,7 +1942,7 @@
       "description": "URL path matches Quantum Route Redirect / Tycoon-2FA-style single-use wordlist token (8+ underscore-joined word tokens) - high-precision phishing kit signature",
       "action": "warn",
       "category": "url_structure",
-      "confidence": 0.95
+      "confidence": 0.95,
       "url_only": true
     }
   ],
