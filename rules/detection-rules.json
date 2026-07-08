@@ -1,6 +1,6 @@
 {
-  "version": "2.2.4",
-  "lastUpdated": "2026-07-08T07:00:00Z",
+  "version": "2.2.5",
+  "lastUpdated": "2026-07-08T11:00:00Z",
   "description": "Phishing detection logic for identifying phishing attempts targeting Microsoft 365 login pages",
   "trusted_login_patterns": [
     "^https:\\/\\/login\\.microsoftonline\\.(com|us)$",
@@ -61,9 +61,9 @@
       "^https:\\/\\/github\\.com(/.*)?$",
       "^https:\\/\\/[^/]*\\.github\\.com(/.*)?$",
       "^https:\\/\\/[^/]*\\.github\\.io(/.*)?$",
-      "^https://[^/]*\\.huntress.io(/.*)?$",
-      "^https://ltshare\\.intelli-comp\\.com(/.*)?$",
-      "^https://[^/]*\\.intellicomp.net(/.*)?$",
+      "^https:\\/\\/[^/]*\\.huntress\\.io(/.*)?$",
+      "^https:\\/\\/ltshare\\.intelli-comp\\.com(/.*)?$",
+      "^https:\\/\\/[^/]*\\.intellicomp\\.net(/.*)?$",
       "^https:\\/\\/id\\.trimble\\.com(/.*)?$",
       "^https:\\/\\/auth\\.services\\.adobe\\.com(/.*)?$"
     ],
