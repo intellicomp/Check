@@ -1,6 +1,6 @@
 {
-  "version": "2.2.8",
-  "lastUpdated": "2026-07-10T00:00:00Z",
+  "version": "2.2.9",
+  "lastUpdated": "2026-07-14T00:00:00Z",
   "description": "Phishing detection logic for identifying phishing attempts targeting Microsoft 365 login pages",
   "trusted_login_patterns": [
     "^https:\\/\\/login\\.microsoftonline\\.(com|us)$",
@@ -67,7 +67,8 @@
       "^https:\\/\\/id\\.trimble\\.com(/.*)?$",
       "^https:\\/\\/[^/]*\\.id\\.trimble\\.com(/.*)?$",
       "^https:\\/\\/auth\\.services\\.adobe\\.com(/.*)?$",
-      "^https:\\/\\/signin\\.ebay\\.(com|co\\.uk)(/.*)?$"
+      "^https:\\/\\/signin\\.ebay\\.(com|co\\.uk)(/.*)?$",
+      "^https:\\/\\/login\\.insurepass\\.com(/.*)?$"
     ],
     "context_indicators": {
       "description": "Additional context that indicates legitimate discussion vs phishing",
