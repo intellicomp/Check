@@ -69,7 +69,7 @@
       "^https:\\/\\/auth\\.services\\.adobe\\.com(/.*)?$",
       "^https:\\/\\/signin\\.ebay\\.(com|co\\.uk)(/.*)?$",
       "^https:\\/\\/login\\.insurepass\\.com(/.*)?$",
-      "^https:\\/\\/app\\.fireflies\\.ai(/.*)?$",
+      "^https:\\/\\/app\\.fireflies\\.ai(/.*)?$"
     ],
     "context_indicators": {
       "description": "Additional context that indicates legitimate discussion vs phishing",
