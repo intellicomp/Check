@@ -1,6 +1,6 @@
 {
-  "version": "1.2.5",
-  "lastUpdated": "2026-07-08T00:00:00Z",
+  "version": "2.2.5",
+  "lastUpdated": "2026-09-22T00:00:00Z",
   "description": "Phishing detection logic for identifying phishing attempts targeting Microsoft 365 login pages",
   "trusted_login_patterns": [
     "^https:\\/\\/login\\.microsoftonline\\.(com|us)$",
@@ -60,7 +60,16 @@
       "^https:\\/\\/(?:[^/]*\\.)?zoom\\.us(/.*)?$",
       "^https:\\/\\/github\\.com(/.*)?$",
       "^https:\\/\\/[^/]*\\.github\\.com(/.*)?$",
-      "^https:\\/\\/[^/]*\\.github\\.io(/.*)?$"
+      "^https:\\/\\/[^/]*\\.github\\.io(/.*)?$",
+      "^https:\\/\\/[^/]*\\.huntress\\.io(/.*)?$",
+      "^https:\\/\\/ltshare\\.intelli-comp\\.com(/.*)?$",
+      "^https:\\/\\/[^/]*\\.intellicomp\\.net(/.*)?$",
+      "^https:\\/\\/id\\.trimble\\.com(/.*)?$",
+      "^https:\\/\\/[^/]*\\.id\\.trimble\\.com(/.*)?$",
+      "^https:\\/\\/auth\\.services\\.adobe\\.com(/.*)?$",
+      "^https:\\/\\/signin\\.ebay\\.(com|co\\.uk)(/.*)?$",
+      "^https:\\/\\/login\\.insurepass\\.com(/.*)?$",
+      "^https:\\/\\/app\\.fireflies\\.ai(/.*)?$",
     ],
     "context_indicators": {
       "description": "Additional context that indicates legitimate discussion vs phishing",
@@ -2010,7 +2019,8 @@
   },
   "domain_squatting": {
     "description": "Domain squatting detection configuration to protect against typosquatting, homoglyphs, and combosquatting attacks",
-    "action": "block",
+    "enabled": false,
+    "action": "warn",
     "deviation_threshold": 2,
     "algorithms": {
       "levenshtein": true,
