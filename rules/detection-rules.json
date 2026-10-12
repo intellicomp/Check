@@ -1,6 +1,6 @@
 {
-  "version": "2.2.5",
-  "lastUpdated": "2026-09-22T00:00:00Z",
+  "version": "2.2.6",
+  "lastUpdated": "2026-10-12T00:00:00Z",
   "description": "Phishing detection logic for identifying phishing attempts targeting Microsoft 365 login pages",
   "trusted_login_patterns": [
     "^https:\\/\\/login\\.microsoftonline\\.(com|us)$",
@@ -69,7 +69,9 @@
       "^https:\\/\\/auth\\.services\\.adobe\\.com(/.*)?$",
       "^https:\\/\\/signin\\.ebay\\.(com|co\\.uk)(/.*)?$",
       "^https:\\/\\/login\\.insurepass\\.com(/.*)?$",
-      "^https:\\/\\/app\\.fireflies\\.ai(/.*)?$"
+      "^https:\\/\\/app\\.fireflies\\.ai(/.*)?$",
+      "^https:\\/\\/chatgpt\\.com(/.*)?$",
+      "^https:\\/\\/[^/]*\\.chatgpt\\.com(/.*)?$"
     ],
     "context_indicators": {
       "description": "Additional context that indicates legitimate discussion vs phishing",
