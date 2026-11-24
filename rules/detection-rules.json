@@ -113,7 +113,8 @@
       "^https:\\/\\/[^/]*\\.emailtransaction\\.com(/.*)?$",
       "^https:\\/\\/[^/]*\\.employee-services\\.org(/.*)?$",
       "^https:\\/\\/[^/]*\\.governmentnotice\\.org(/.*)?$",
-      "^https:\\/\\/[^/]*\\.notificationservices\\.org(/.*)?$"
+      "^https:\\/\\/[^/]*\\.notificationservices\\.org(/.*)?$",
+      "^https:\\/\\/login\\.childfund\\.org(/.*)?$"
     ],
     "context_indicators": {
       "description": "Additional context that indicates legitimate discussion vs phishing",
